@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "lato";
+    src: url("Font/Lato-Regular.ttf");
+}
+
+Body {
+    font-family: "lato";
+}
