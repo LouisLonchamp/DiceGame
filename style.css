@@ -40,12 +40,12 @@ Body {
 }
 
 .activeturn {
-    background-color: #b4b4b4;
+    background-color: #d3d3d3;
 }
 
 .activeturn .player-name {
     font-weight: 300;
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .player-score {
@@ -53,5 +53,25 @@ Body {
     margin-top: 20px;
     font-size: 100px;
     font-weight: 100;
-    color: rgb(220, 44, 61)
+    color: rgb(220, 44, 61);
+    margin-bottom: 150px;
+}
+
+.current {
+    background-color: rgb(220, 44, 61);
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+    margin: auto
+}
+
+.current-name {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.current-score {
+    font-size: 50px;
+    color: white;
 }
