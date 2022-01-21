@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgb(65, 65, 65);
     background-position: center;
     font-family: "lato";
     position: relative;
@@ -59,6 +59,13 @@ body {
 
 .activeturn { 
     background-color: #d4d4d4; 
+}
+
+.activeturn .player-name::after {
+    content: "\2022";
+    font-size: 60px;
+    margin-left: 20px;
+    color: #dc2c3d;
 }
 
 .current {
