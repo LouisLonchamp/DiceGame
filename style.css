@@ -28,14 +28,14 @@ body {
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.2);
 }
 
-.player-1-screen {
+.player-0-screen {
     width: 50%;
     float: left;
     height: 800px;
     padding: 100px;
 }
 
-.player-2-screen {
+.player-1-screen {
     width: 50%;
     float: right;
     height: 800px;
@@ -126,4 +126,12 @@ img {
     top: 250px;
     transform: translateX(-50%);
     height: 150px;
+}
+
+.winner { 
+    background-color: #f7f7f7; 
+}
+
+.winner .player-name { 
+    font-weight: 300; color: #EB4D4D; 
 }
