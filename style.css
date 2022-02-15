@@ -100,6 +100,12 @@ button {
     font-size: 30px;
 }
 
+button:hover {
+     font-weight: 600;
+     margin-right: 20px;
+     font-weight: bolder;
+}
+
 img {
     margin-right: 10px;
     vertical-align: text-top;
@@ -107,17 +113,14 @@ img {
 
 .btn-new-game {
     top: 50px;
-    font-weight: bolder;
 }
 
 .btn-roll-dice {
     top: 530px;
-    font-weight: bolder;
 }
 
 .btn-hold {
     top: 630px;
-    font-weight: bolder;
 }
 
 .dice {
