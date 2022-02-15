@@ -119,3 +119,11 @@ img {
     top: 630px;
     font-weight: bolder;
 }
+
+.dice {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+    height: 150px;
+}
