@@ -123,7 +123,7 @@ img {
     top: 630px;
 }
 
-.dice {
+#dice {
     position: absolute;
     left: 50%;
     top: 250px;
