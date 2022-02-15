@@ -1,9 +1,10 @@
 /* Add variables */
-var gameStarted, dice, diceDOM, playerTurn, roundScore, globalScore
+var gameStarted, dice, diceDOM, playerTurn, roundScore, globalScore;
 
-/* Principle of the roll dice button */
+
 init();
 
+/* Principle of the roll dice button */
 document.getElementById('btn-roll-dice').addEventListener('click', function() {
     if(gameStarted) {
         /* Roll of the dice */
@@ -18,7 +19,26 @@ document.getElementById('btn-roll-dice').addEventListener('click', function() {
             roundScore += dice;
             document.getElementById('current-' + playerTurn).textContent = roundScore; 
         }
+        else {
+            nextPlayer();
+        }
+    }
+});
 
+/* Principle of the hold button */
+document.getElementById('btn-hold').addEventListener('click', function() {
+    if (gameStarted) {
+        /* Adding the roundScore to globalScore */
+        globalScore[playerTurn] += roundScore;
+        document.getElementById('score-' + playerTurn).textContent = globalScore[playerTurn];
+
+        /* Winner or not */
+        if (globalScore[playerTurn] >= 100) {
+            document.getElementById('name-' + playerTurn).textContent = 'Game won';
+            document.getElementById('.player-' + playerTurn + '-screen').classList.add('winner');
+            document.getElementById('.player-' + playerTurn + '-screen').classList.remove('activeturn');
+            gameStarted = false;
+        }
         else {
             nextPlayer();
         }
